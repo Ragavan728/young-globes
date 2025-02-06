@@ -1,0 +1,1490 @@
+/* Default code Starts here */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-wrap: pretty;
+    /* border: 1px solid red; */
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #eff2f7;
+    font-family: "Poppins", serif;
+    font-family: "Open Sans", serif;
+    /* font-family: "Playfair Display", serif; */
+    line-height: 1.5;
+    font-size: 1.6rem;
+    -webkit-font-smoothing: antialiased;
+    font-optical-sizing: auto;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+p {
+    text-wrap: balance;
+    letter-spacing: 0.5px;
+}
+
+input,
+textarea,
+button {
+    font-family: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+:root {
+    --primaryColor: #19274d;
+    --secondaryColor: #0095ff;
+    --tertiaryCOlor: #d6d6d6;
+    --fourthColor: #181819;
+    --fifthColor: #999999;
+    --darkColor: #000000;
+    --lightColor: #ffffff;
+    --regularFont: 1.4rem;
+    --headingFont: 2rem;
+    --ffPrimary: "Poppins", serif;
+    --ffSecondary: "Open Sans", serif;
+}
+
+/* project standard classes Starts */
+
+.align {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* .componentSpacing {
+    padding: 3rem 0rem;
+} */
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0rem 2rem;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0rem 2rem;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0rem 2rem;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    padding: 0rem 2rem;
+}
+
+.dflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dflex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* project standard classes Ends */
+
+/* Default code Ends here */
+
+/* :::PARENT CONTAINER Code Starts here::: */
+
+header {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+}
+
+/* :::PARENT CONTAINER Code Ends here::: */
+/* :::PARENT CONTAINER Code Ends here::: */
+
+/* :::HEADER Code Starts hereE::: */
+/* Navbar code */
+/* Step1: parentContainer */
+/* allready in style.css */
+
+/* Step2: component  */
+.navBar {
+    background-color: var(--lightColor);
+    /* padding: 3rem 0rem; */
+}
+
+/* Step3: componentContainer*/
+.navContainer {
+    /* background-color: #ffffff; */
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Step4: row */
+/* .navBody {
+    background-color: var(--lightColor);
+} */
+
+/* Step5: column 1 */
+.logoBlock {
+    /* background-color: #412e8e; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Step6: subColumn 1 */
+.navBox {
+    /* background-color: #b9585a; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 3rem;
+}
+
+/* Step7: contentContainer */
+.navBox img {
+    /* background-color: #454e4e; */
+    height: 4rem;
+}
+
+/* Step5: column 2 */
+.navLinksBlock {
+    /* background-color: #897a8a; */
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Step6: subColumn 1 */
+.navLinksBox {
+    /* background-color: #b9585a; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    /* padding: 1rem; */
+}
+
+/* Step7: contentContainer */
+.navLinksBox li {
+    /* background-color: #70a0a0; */
+    list-style: none;
+    font-family: var(--ffPrimary);
+    font-weight: 550;
+    padding: 2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.navLinksBox a {
+    /* background-color: #167777; */
+    text-decoration: none;
+    color: var(--darkColor);
+}
+
+.navLinksBox a:hover {
+    /* background-color: #167777; */
+    text-decoration: none;
+    color: var(--secondaryColor);
+}
+
+.navLinksBox span {
+    color: var(--secondaryColor);
+}
+
+/* Navbar code */
+
+/* Hero Section code */
+/* Step1: parentContainer */
+/* already written in style.css */
+
+/* Step2:  component */
+.heroSection {
+    /* background-color: #a3b2d7; */
+    background-image: url(./assets/images/heroSection.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding: 15rem 0rem;
+}
+
+/* Step3: componentContainer */
+.heroContainer {
+    /* background-color: #01325c; */
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Step4: row */
+/* .heroBody {
+    background-color: #0088ff;
+    padding: 0rem 5rem;
+} */
+
+/* Step5: column */
+.heroBlock {
+    /* background-color: #4aabff; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Step6: subColumn */
+.heroBox {
+    /* background-color: var(--lightColor); */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: start;
+    width: 40%;
+}
+
+/* Step7: contentContainer */
+.heroBox h1 {
+    /* background-color: #0f416c; */
+    font-family: var(--ffPrimary);
+    font-size: 5rem;
+    color: var(--lightColor);
+    margin-bottom: 2rem;
+    line-height: 6rem;
+}
+
+.heroBox p {
+    /* background-color: #40688a; */
+    font-family: var(--ffSecondary);
+    color: var(--lightColor);
+    margin-bottom: 3rem;
+}
+
+.heroBox button {
+    background-color: var(--fourthColor);
+    cursor: pointer;
+    border: 2px solid var(--lightColor);
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+    color: var(--lightColor);
+    font-family: var(--ffPrimary);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: var(--secondaryColor);
+}
+
+/* Hero Section code */
+/* :::HEADER Code Ends here::: */
+
+
+/* :::MAIN Code Starts here::: */
+/* ourService code */
+/* Step1: parentContainer */
+/* already written in style.css */
+
+/* Step2:  component */
+.ourService {
+    background-color: var(--lightColor);
+    padding: 3rem 0rem;
+}
+
+/* Step3: componentContainer */
+.ourServiceContainer {
+    /* background-color: #01325c; */
+    max-width: 1200px;
+    height: auto;
+}
+
+/* Step4: row 1 */
+/* .headingBody {
+    background-color: #ffffff;
+} */
+
+/* Step5: column 1 */
+.headingBlock {
+    /* background-color: #4aabff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Step6: subColumn 1 */
+.headingBox {
+    /* background-color: var(--lightColor); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Step7: contentContainer */
+.headingBox h2 {
+    /* background-color: #0f416c; */
+    font-family: var(--ffPrimary);
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--primaryColor);
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    /* line-height: 1.1; */
+}
+
+.headingBox h3 {
+    /* background-color: #22272c; */
+    font-family: var(--ffPrimary);
+    font-size: 1.5rem;
+    color: var(--secondaryColor);
+    font-weight: 600;
+    text-transform: capitalize;
+
+}
+
+.line {
+    background-color: var(--secondaryColor);
+    width: 2.2em;
+    height: 0.4rem;
+}
+
+/* Step4: row 2 */
+/* .serviceBody {
+    background-color: #ffffff;
+} */
+
+/* Step5: column 1 */
+.serviceBlock {
+    /* background-color: #4aabff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Step6: subColumn 1 */
+.serviceBox {
+    /* background-color: var(--lightColor); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+/* Step7: contentContainer */
+.serviceBox p {
+    /* background-color: #40688a; */
+    font-family: var(--ffSecondary);
+    color: var(--primaryColor);
+}
+
+/* ourService code */
+
+/* experience code */
+/* Step1: parentContainer */
+/* already written in style.css */
+
+/* Step2:  component */
+.experience {
+    background-color: var(--lightColor);
+    padding: 3rem 0rem;
+}
+
+/* Step3: componentContainer */
+.experienceContainer {
+    /* background-color: #01325c; */
+    max-width: 1200px;
+    height: auto;
+}
+
+/* Step4: row 1 */
+/* .experienceBody {
+    background-color: var(--lightColor);
+} */
+
+/* Step5: column 1 */
+.experienceBlock {
+    /* background-color: #4aabff; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2rem;
+}
+
+/* Step6: subColumn 1 */
+.experienceBox {
+    /* background-color: var(--lightColor); */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: start;
+    width: 100%;
+}
+
+/* Step7: contentContainer */
+.experienceBox h3 {
+    /* background-color: #0f416c; */
+    font-family: var(--ffPrimary);
+    font-size: 2.4rem;
+    color: var(--primaryColor);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.experienceBox p {
+    /* background-color: #40688a; */
+    font-family: var(--ffSecondary);
+    color: var(--primaryColor);
+    margin-bottom: 2.5rem;
+}
+
+/* Step6: subColumn 2 */
+.experienceLitsBox {
+    /* background-color: var(--lightColor); */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+/* Step7: contentContainer */
+.experienceLitsBox li {
+    /* background-color: #0f416c; */
+    font-family: var(--ffPrimary);
+    color: var(--primaryColor);
+    letter-spacing: 0.6px;
+    text-align: start;
+    margin-left: 2rem;
+}
+
+/* Step6: subColumn 3 */
+.exploreBox {
+    /* background-color: var(--lightColor); */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* Step7: contentContainer */
+.exploreBox p {
+    /* background-color: #0f416c; */
+    font-family: var(--ffPrimary);
+}
+
+.exploreBox a {
+    font-weight: 600;
+    color: var(--secondaryColor);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primaryColor);
+    text-decoration: underline;
+}
+
+/* Step5: column 2 */
+.experienceImgBlock {
+    /* background-color: #4aabff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Step6: subColumn 1 */
+.experienceImgBox {
+    /* background-color: var(--lightColor); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Step7: contentContainer */
+.experienceImgBox img {
+    /* background-color: #0f416c; */
+    height: 35rem;
+}
+
+/* experience code */
+
+/* solution code */
+/* Step1: parentContainer */
+/* already written in style.css */
+
+/* Step2:  component */
+.solution {
+    background-color: var(--lightColor);
+    padding: 3rem 0rem;
+}
+
+/* Step3: componentContainer */
+.solutionContainer {
+    /* background-color: #01325c; */
+    max-width: 1200px;
+    height: auto;
+}
+
+/* Step4: row 1 */
+/* .solutionBody {
+    background-color: #0088ff;
+} */
+
+/* Step5: column 1 */
+.solutionImgBlock {
+    /* background-color: #4aabff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Step6: subColumn 1 */
+.solutionImgBox {
+    /* background-color: var(--lightColor); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Step7: contentContainer */
+.solutionImgBox img {
+    /* background-color: #0f416c; */
+    height: 35rem;
+}
+
+/* Step5: column 2 */
+.solutionBlock {
+    /* background-color: #4aabff; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2rem;
+}
+
+/* Step6: subColumn 1 */
+.solutionBox {
+    /* background-color: var(--lightColor); */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: start;
+    width: 100%;
+}
+
+/* Step7: contentContainer */
+.solutionBox h3 {
+    /* background-color: #0f416c; */
+    font-family: var(--ffPrimary);
+    font-size: 2.4rem;
+    color: var(--primaryColor);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.solutionBox p {
+    /* background-color: #92a7ba; */
+    font-family: var(--ffSecondary);
+    color: var(--primaryColor);
+    margin-bottom: 2.5rem;
+}
+
+/* Step6: subColumn 2 */
+.solutionLitsBox {
+    /* background-color: var(--lightColor); */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+/* Step7: contentContainer */
+.solutionLitsBox li {
+    /* background-color: #0f416c; */
+    font-family: var(--ffPrimary);
+    color: var(--primaryColor);
+    letter-spacing: 0.6px;
+    text-align: start;
+    margin-left: 2rem;
+}
+
+/* Step6: subColumn 3 */
+.exploreBox {
+    /* background-color: var(--lightColor); */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Step7: contentContainer */
+.exploreBox p {
+    /* background-color: #0f416c; */
+    font-family: var(--ffPrimary);
+}
+
+.exploreBox a {
+    color: var(--secondaryColor);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.exploreBox a:hover {
+    color: var(--primaryColor);
+    text-decoration: underline;
+}
+
+/* solution code */
+
+/* MArketing code */
+/* Step1: parentContainer */
+/* already written in style.css */
+
+/* Step2:  component */
+.marketing {
+    background-color: var(--lightColor);
+    padding: 3rem 0rem;
+}
+
+/* Step3: componentContainer */
+.marketingContainer {
+    /* background-color: #01325c; */
+    max-width: 1200px;
+    height: auto;
+}
+
+/* Step4: row 1 */
+/* .marketingBody {
+    background-color: #0088ff;
+} */
+
+/* Step5: column 1 */
+.marketingBlock {
+    /* background-color: #4aabff; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2rem;
+}
+
+/* Step6: subColumn 1 */
+.marketingBox {
+    /* background-color: var(--lightColor); */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: start;
+    width: 100%;
+}
+
+/* Step7: contentContainer */
+.marketingBox h3 {
+    /* background-color: #0f416c; */
+    font-family: var(--ffPrimary);
+    font-size: 2.4rem;
+    color: var(--primaryColor);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.marketingBox p {
+    /* background-color: #40688a; */
+    font-family: var(--ffSecondary);
+    color: var(--primaryColor);
+    margin-bottom: 2.5rem;
+}
+
+/* Step6: subColumn 2 */
+.marketingLitsBox {
+    /* background-color: var(--lightColor); */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+/* Step7: contentContainer */
+.marketingLitsBox li {
+    /* background-color: #0f416c; */
+    font-family: var(--ffPrimary);
+    color: var(--primaryColor);
+    letter-spacing: 0.6px;
+    text-align: start;
+    margin-left: 2rem;
+}
+
+/* Step6: subColumn 3 */
+.exploreBox {
+    /* background-color: var(--lightColor); */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Step7: contentContainer */
+.exploreBox p {
+    /* background-color: #0f416c; */
+    font-family: var(--ffPrimary);
+    color: var(--secondaryColor);
+    font-weight: 600;
+}
+
+.exploreBox a {
+    font-weight: 600;
+    color: var(--secondaryColor);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primaryColor);
+    text-decoration: underline;
+}
+
+/* Step5: column 2 */
+.marketingImgBlock {
+    /* background-color: #4aabff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Step6: subColumn 1 */
+.marketingImgBox {
+    /* background-color: var(--lightColor); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Step7: contentContainer */
+.marketingImgBox img {
+    /* background-color: #0f416c; */
+    height: 35rem;
+}
+
+/* Marketing code */
+
+/* Customer code */
+/* Step1: parentContainer */
+/* already written in style.css */
+
+/* Step2:  component */
+.customers {
+    background-color: var(--darkColor);
+    padding: 3rem 0rem;
+}
+
+/* Step3: componentContainer */
+.customersContainer {
+    /* background-color: #01325c; */
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Step4: row 1 */
+/* .customersBody {
+    background-color: var(--darkColor);
+} */
+
+/* Step5: column 1 */
+.customersBlock {
+    /* background-color: #4aabff; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3rem;
+}
+
+/* Step6: subColumn 1 */
+.customersHeadingBox {
+    /* background-color: var(--lightColor); */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Step7: contentContainer */
+.customersHeadingBox p {
+    /* background-color: #0f416c; */
+    font-family: var(--ffSecondary);
+    color: var(--fifthColor);
+    margin-bottom: 2rem;
+}
+
+.customersHeadingBox h3 {
+    /* background-color: #40688a; */
+    font-size: 3rem;
+    line-height: 2rem;
+    color: var(--lightColor);
+    margin-bottom: 2rem;
+}
+
+/* Step6: subColumn 2 */
+.customerBox {
+    /* background-color: var(--lightColor); */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: start;
+    width: 100%;
+}
+
+/* Step7: contentContainer */
+.customerBox .para01 {
+    /* background-color: #0f416c; */
+    color: var(--fifthColor);
+    margin-bottom: 2rem;
+}
+
+.customerBox .para02 {
+    /* background-color: #0f416c; */
+    color: var(--fifthColor);
+    margin-bottom: 2rem;
+}
+
+/* Step6: subColumn 3 */
+.workBox {
+    /* background-color: var(--lightColor); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Step7: contentContainer */
+.workBox p {
+    /* background-color: #0f416c; */
+    font-family: var(--ffPrimary);
+    font-weight: 600;
+}
+
+.workBox a {
+    color: var(--secondaryColor);
+}
+
+a:hover {
+    color: var(--tertiaryCOlor);
+}
+
+/* Step5: column 1 */
+/* .customersImgBlock {
+    background-color: #4aabff;
+} */
+
+/* Step6: subColumn 1 */
+/* .customersImgBox {
+    background-color: var(--lightColor);
+} */
+
+/* Step7: contentContainer */
+/* .customersImgBox img {
+    background-color: #0f416c;
+} */
+/* Customer code */
+
+/* ourFeature code */
+/* Step1: parentContainer */
+/* already written in style.css */
+
+/* Step2:  component */
+.ourFeatures {
+    /* background-color: #ffd000; */
+    padding: 3rem 0rem;
+}
+
+/* Step3: componentContainer */
+.ourFeaturesContainer {
+    /* background-color: #01325c; */
+    max-width: 1200px;
+    height: auto;
+}
+
+/* Step4: row 1 */
+/* .headingBody {
+    background-color: #0088ff;
+} */
+
+/* Step5: column 1 */
+.headingBlock {
+    /* background-color: #4aabff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Step6: subColumn 1 */
+.headingBox {
+    /* background-color: var(--lightColor); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Step7: contentContainer */
+.headingBox h3 {
+    /* background-color: #0f416c; */
+    font-family: var(--ffPrimary);
+    font-size: 1.5rem;
+    color: var(--secondaryColor);
+    font-weight: 600;
+}
+
+.headingBox h2 {
+    /* background-color: #40688a; */
+    font-family: var(--ffPrimary);
+    font-size: 3rem;
+    color: var(--primaryColor);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.line {
+    background-color: var(--secondaryColor);
+    width: 2.2em;
+    height: 0.4rem;
+}
+
+/* Step4: row 2 */
+/* .ourFeaturesBody {
+    background-color: #0088ff;
+} */
+
+/* Step5: column 1 */
+.ourFeaturesBlock {
+    /* background-color: #4aabff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Step6: subColumn 1 */
+.ourFeaturesBox {
+    /* background-color: var(--lightColor); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Step7: contentContainer */
+.ourFeaturesBox p {
+    /* background-color: #0f416c; */
+    font-family: var(--ffSecondary);
+    color: var(--primaryColor);
+}
+
+/* ourFeature code */
+
+/* FeaturesLists code */
+/* ::::CSS Sequence (7 Steps):::: */
+
+/* Step1: parentContainer */
+/* already written in style.css */
+
+/* Step2: component  */
+.featureLists {
+    /* background-color: #000000; */
+    padding: 3rem 0rem;
+}
+
+/* Step3: componentContainer*/
+.featureListsContainer {
+    /* background-color: #38ab38; */
+    max-width: 1200px;
+    height: auto;
+}
+
+/* Step4: row 1 */
+.featureListsBody {
+    /* background-color: #0095ff; */
+    padding: 0rem 5rem;
+}
+
+/* Step5: column 1 */
+.featureListsBlock {
+    /* background-color: #9fe7e7; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Step6: subColumn 1 */
+.featureListsImgBox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Step7: contentContainer */
+.featureListsImgBox img {
+    width: 50rem;
+    /* margin-right: 7rem; */
+    /* height: auto; */
+}
+
+/* Step5: column 2 */
+.featureListsBox01 {
+    /* background-color: #9fe7e7; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Step6: subColumn 1 */
+.listsCardBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+/* Step7: contentContainer */
+.cardHead h4 {
+    font-family: var(--ffPrimary);
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--primaryColor);
+    margin-bottom: 3rem;}
+
+.cardHead img {
+    width: 4rem;
+    margin-right: 3em;
+    margin-left: 3em;
+    /* height: auto; */
+}
+
+.cardBody p {
+    font-family: var(--ffSecondary);
+    color: var(--primaryColor);
+    text-align: start;
+    margin-left: 13rem;
+    margin-right: 2rem;
+    margin-bottom: 3rem;}
+
+/* Step5: column 3 */
+.featureListsBox02 {
+    /* background-color: #9fe7e7; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Step6: subColumn 1 */
+.listsCardBox {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Step7: contentContainer */
+
+/* FeaturesLists code */
+
+/* Patners code */
+/* Step1: parentContainer */
+/* already written in style.css */
+
+/* Step2:  component */
+.partners {
+    background-color: var(--lightColor);
+    padding: 3rem 0rem;
+}
+
+/* Step3: componentContainer */
+.partnersContainer {
+    /* background-color: #01325c; */
+    max-width: 1200px;
+    height: auto;
+}
+
+/* Step4: row 1 */
+/* .headingBody {
+    background-color: var(--lightColor);
+} */
+
+/* Step5: column 1 */
+.headingBlock {
+    /* background-color: #4aabff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Step6: subColumn 1 */
+.headingBox {
+    /* background-color: var(--lightColor); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+}
+
+/* Step7: contentContainer */
+.headingBox h2 {
+    /* background-color: #0f416c; */
+    font-family: var(--ffPrimary);
+    font-size: 3rem;
+    color: var(--primaryColor);
+    font-weight: 600;
+}
+
+.headingBox h3 {
+    /* background-color: #40688a; */
+    font-family: var(--ffPrimary);
+    font-size: 1.4rem;
+    color: var(--secondaryColor);
+    font-weight: 600;
+}
+
+.line {
+    background-color: var(--secondaryColor);
+    width: 2.2em;
+    height: 0.4rem;
+}
+
+/* Step4: row 2 */
+.partnersBody {
+    background-color: var(--lightColor);
+    padding: 0rem 3rem;
+}
+
+/* Step5: column 1 */
+.partnerBlock {
+    /* background-color: #4aabff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Step6: subColumn 1 */
+.partnerImgBox {
+    /* background-color: var(--lightColor); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Step7: contentContainer */
+/* .partnerImgBox img {
+    background-color: #0f416c;
+} */
+/* Partners code */
+/* :::MAIN Code Ends here::: */
+
+
+/* :::FOOTER Code Starts here::: */
+/* Footer code */
+/* Step1: parentContainer */
+/* already written in style.css */
+
+/* Step2:  component */
+.footer {
+    background-color: var(--darkColor);
+    /* padding: 3rem 0rem; */
+}
+
+/* Step3: componentContainer */
+.footerContainer {
+    background-color: var(--fourthColor);
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Step4: row 1 */
+.footerBody {
+    /* background-color: var(--fourthColor); */
+    padding: 0rem 3rem;
+}
+
+/* Step5: column 1 */
+.footerLogBlock {
+    /* background-color: #4aabff; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 5rem 0rem;
+}
+
+/* Step6: subColumn 1 */
+.footerLogoBox {
+    /* background-color: var(--lightColor); */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+/* Step7: contentContainer */
+/* .footerLogoBox img {
+    background-color: #0f416c;
+} */
+
+/* Step5: column 2 */
+.footerListsBlock {
+    /* background-color: #244867; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 5rem 0rem;
+}
+
+/* Step6: subColumn 1 */
+.footerListsBox {
+    /* background-color: var(--lightColor); */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+/* Step7: contentContainer */
+.footerHeading h6 {
+    /* background-color: #0f416c; */
+    font-family: var(--ffPrimary);
+    font-size: 1.4rem;
+    color: var(--lightColor);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+/* Step6: subColumn 2 */
+.footerLists {
+    /* background-color: var(--lightColor); */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+/* Step7: contentContainer */
+.footerLists li {
+    /* background-color: #0f416c; */
+    list-style: none;
+    line-height: 3rem;
+}
+
+.footerLists a {
+    /* background-color: #f0f8ff; */
+    font-family: var(--ffPrimary);
+    font-size: 1.4rem;
+    color: var(--fifthColor);
+    text-decoration: none;
+}
+
+.footerLists a:hover {
+    color: var(--lightColor);
+}
+
+.footerLists i {
+    color: var(--secondaryColor);
+    font-size: 1.4rem;
+    margin-right: 1rem;
+}
+
+/* Step5: column 4 */
+.contactListsBlock {
+    /* background-color: #4aabff; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 5rem 0rem;
+}
+
+/* Step6: subColumn 1 */
+.contactHeadingBox {
+    background-color: var(--lightColor);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Step7: contentContainer */
+.contactHeading h6 {
+    /* background-color: #0f416c; */
+    font-family: var(--ffPrimary);
+    font-size: 1.4rem;
+    color: var(--lightColor);
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+/* Step6: subColumn 2 */
+.contactListsBox {
+    /* background-color: var(--lightColor); */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: start;
+}
+
+/* Step7: contentContainer */
+.contactListsBox p {
+    /* background-color: #0f416c; */
+    font-family: var(--ffPrimary);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.contactListsBox a {
+    text-decoration: none;
+    color: var(--fifthColor);
+}
+
+.contactListsBox a:hover {
+    /* background-color: #167777; */
+    text-decoration: none;
+    color: var(--secondaryColor);
+}
+
+/* Step4: row 2 */
+.copyrightsBody {
+    background-color: var(--darkColor);
+    padding: 0rem 3rem;
+}
+
+/* Step5: column 1 */
+.copyrightsBlock {
+    /* background-color: #4aabff; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3rem;
+}
+
+/* Step6: subColumn 1 */
+.copyrightsBox {
+    /* background-color: var(--lightColor); */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+/* Step7: contentContainer */
+.copyrightsBox p {
+    /* background-color: #0f416c; */
+    font-family: var(--ffPrimary);
+    font-size: 1.2rem;
+    color: var(--fifthColor);
+}
+
+.copyrightsBox a {
+    /* background-color: #0f416c; */
+    text-decoration: none;
+    font-family: var(--ffPrimary);
+    font-size: 1.2rem;
+    color: var(--lightColor);
+}
+
+/* Footer code */
+
+/* :::FOOTER Code Ends here::: */
+
+
+/* ::::: RESPONSIVE DESIGN DEVICE SIZES ::::: */
+
+/* for Responsive Target the ROW Code (display:grid) */
+
+/* Small devices (landscape phones, upto 576px and below) */
+/* @media (width <=576px) */
+@media (max-width: 576px) {
+    .heroBox {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .grid-1,
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Medium devices (tablets, upto 768px and above) */
+/* @media (min-width: 577px) and (max-width: 768px) */
+@media (width >=577px) and (width <=768px) {
+    /* write code here */
+}
+
+
+/* Large devices (Laptops, upto 992px and above) */
+/* @media (min-width: 769px) and (max-width: 992px) */
+@media (width >=769px) and (width <=992px) {
+    /* write code here */
+}
+
+
+/* X-Large devices (large desktops, upto 1200px and above) */
+/* @media (min-width: 993px) and (max-width: 1200px) */
+@media (width >=993px) and (width <=1200px) {
+    /* write code here */
+}
+
+
+/* XX-Large devices (larger desktops, upto 1400px and above) */
+/* @media (min-width: 1200px)  */
+@media (width >=1200px) {
+    /* write code here */
+}
